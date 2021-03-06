@@ -7,6 +7,13 @@ package com.codeforc.lagou.pojo;
  **/
 public class MappedStatement {
 
+    public MappedStatement(String id, String resultType, String parameterType, String sql) {
+        this.id = id;
+        this.resultType = resultType;
+        this.parameterType = parameterType;
+        this.sql = sql;
+    }
+
     private String id;
 
     private String resultType;

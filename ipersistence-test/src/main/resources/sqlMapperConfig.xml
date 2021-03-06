@@ -1,6 +1,6 @@
 <configuration>
     <datasource>
-        <property name="classDriver" value="com.mysql.driver.Driver" />
+        <property name="driverClass" value="com.mysql.driver.Driver" />
         <property name="jdbcUrl" value="jdbc:mysql://114.67.127.19:3306/lagou" />
         <property name="username" value="root" />
         <property name="password" value="admin@123456" />
