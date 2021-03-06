@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ipersistence/ipersistence.iml" filepath="$PROJECT_DIR$/ipersistence/ipersistence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ipersistence-test/ipersistence-test.iml" filepath="$PROJECT_DIR$/ipersistence-test/ipersistence-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/lagou-java.iml" filepath="$PROJECT_DIR$/.idea/lagou-java.iml" />
+    </modules>
+  </component>
+</project>

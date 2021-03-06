@@ -1,0 +1,10 @@
+<mapper namespace="User">
+
+    <select id="selectList" resultType="com.codeforc.lagou.pojo.User">
+        SELECT * FROM user;
+    </select>
+
+    <select id="selectOne" resultType="com.codeforc.lagou.pojo.User">
+        SELECT * FROM user WHERE username = #{username} AND telephone = #{telephone};
+    </select>
+</mapper>
