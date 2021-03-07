@@ -5,7 +5,7 @@ package com.codeforc.lagou.factory;
  * @Author: Ifan
  * date: 2021-03-06
  **/
-public class SqlSessionFactory {
+public interface SqlSessionFactory {
 
-
+    SqlSession openSession();
 }

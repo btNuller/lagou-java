@@ -22,6 +22,11 @@ public class SqlSessionFactoryBuilder {
     public SqlSessionFactory build(InputStream inputStream) throws DocumentException, PropertyVetoException {
         XmlConfigReader xmlConfigReader = new XmlConfigReader();
         Configuration configuration = xmlConfigReader.read(inputStream);
+
+        //第二创建sqlSessionFactory对象：工厂类：生产SqlSession会话对象
+        SqlSessionFactory sqlSessionFactory = new DefaultSqlSessionFactory(configuration);
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
         return null;
     }
 }

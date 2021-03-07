@@ -32,14 +32,12 @@ public class XmlMapperReader implements XmlConfigProperty, XmlReader {
         String namespace = rootElement.attributeValue(NAMESPACE);
 
         Map<String, MappedStatement> mapping = new LinkedHashMap<>(16);
-
-
         List<Element> selectElements = rootElement.selectNodes("//select");
         for (Element selectElement : selectElements) {
             String id = selectElement.attributeValue(ID);
             String resultType = selectElement.attributeValue(RESULT_TYPE);
             String parameterType = selectElement.attributeValue(PARAMETER_TYPE);
-            String sql = selectElement.getStringValue();
+            String sql = selectElement.getTextTrim();
             MappedStatement selectMappedStatement = new MappedStatement(id, resultType, parameterType, sql);
 
             mapping.put(buildStatementId(namespace, id), selectMappedStatement);
